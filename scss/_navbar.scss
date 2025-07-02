@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+
+
+.header {
+  background-color: $color-blanco;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: $color-violeta;
+    }
+
+    &__menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+
+      li a {
+        text-decoration: none;
+        color: $color-negro;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $color-magenta;
+        }
+      }
+    }
+
+    &__cta {
+      background-color: $color-violeta;
+      color: $color-blanco;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: $color-magenta;
+      }
+    }
+  }
+} 

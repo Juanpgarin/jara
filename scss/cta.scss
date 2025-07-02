@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+.cta {
+    background-color: $color-magenta;
+    color: $color-blanco;
+    text-align: center;
+    padding: 4rem 2rem;
+  
+    h2 {
+      font-size: 1.8rem;
+      font-family: $font-titulo;
+      margin-bottom: 1.5rem;
+    }
+  
+    .btn-primary {
+      background-color: $color-blanco;
+      color: $color-magenta;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+  
+      &:hover {
+        background-color: $color-rosa;
+      }
+    }
+  }
+  

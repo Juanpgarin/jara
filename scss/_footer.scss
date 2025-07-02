@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+.footer {
+    background-color: $color-violeta;
+    color: $color-blanco;
+    text-align: center;
+    padding: 2rem;
+  
+    &__logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    &__links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+  
+      a {
+        color: $color-blanco;
+        text-decoration: none;
+  
+        &:hover {
+          color: $color-rosa;
+        }
+      }
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  

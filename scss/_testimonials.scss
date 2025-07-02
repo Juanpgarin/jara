@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+
+.testimonials {
+    background-color: $color-blanco;
+    padding: 4rem 2rem;
+  
+    h2 {
+      text-align: center;
+      font-family: $font-titulo;
+      margin-bottom: 2rem;
+      color: $color-violeta;
+    }
+  
+    &__slider {
+      display: grid;
+      gap: 2rem;
+  
+      .testimonial {
+        background-color: $color-rosa;
+        padding: 1.5rem;
+        border-left: 5px solid $color-magenta;
+        border-radius: 5px;
+  
+        p {
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+  
+        span {
+          font-weight: bold;
+          display: block;
+        }
+      }
+    }
+  }
+  

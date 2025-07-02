@@ -1,0 +1,70 @@
+@use "variables" as *;
+
+.contact {
+  margin-top: -6rem; 
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 4rem 2rem;
+  background-color: $color-gris;
+}
+  
+    h2 {
+      text-align: center;
+      font-family: $font-titulo;
+      margin-bottom: 2rem;
+      color: $color-violeta;
+    }
+  
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+  
+      input,
+      select,
+      textarea {
+        padding: 0.75rem;
+        border: 1px solid $color-magenta;
+        border-radius: 5px;
+        font-family: inherit;
+      }
+  
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+  
+      button {
+        background-color: $color-violeta;
+        color: $color-blanco;
+        padding: 0.75rem;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s;
+  
+        &:hover {
+          background-color: $color-magenta;
+        }
+      }
+    }
+  
+    p {
+      text-align: center;
+      margin-top: 1.5rem;
+      a {
+        color: $color-violeta;
+        font-weight: bold;
+        text-decoration: none;
+  
+        &:hover {
+          color: $color-magenta;
+        }
+      }
+    }
+  
+  

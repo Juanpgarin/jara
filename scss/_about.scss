@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+.about {
+    background-color: $color-gris;
+    padding: 4rem 2rem;
+  
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+  
+      .about__text {
+        flex: 1;
+  
+        h2 {
+          font-family: $font-titulo;
+          color: $color-violeta;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          margin-bottom: 1rem;
+          font-size: 1rem;
+        }
+      }
+  
+      .about__image {
+        flex: 1;
+  
+        img {
+          width: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+
+.services {
+    background-color: $color-blanco;
+    padding: 4rem 2rem;
+  
+    h2 {
+      text-align: center;
+      font-family: $font-titulo;
+      margin-bottom: 2rem;
+      color: $color-violeta;
+    }
+  
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+  
+      .service-item {
+        background-color: $color-rosa;
+        padding: 1.5rem;
+        border: 1px solid $color-magenta;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $color-negro;
+      }
+    }
+  }
+  

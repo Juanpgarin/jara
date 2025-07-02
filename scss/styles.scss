@@ -1,0 +1,31 @@
+@use "variables" as *;
+@use "navbar";
+@use "hero";
+@use "main";
+@use "about";
+@use "cta";
+@use "testimonials"; 
+@use "services";
+@use "contact";
+@use "footer";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-cuerpo;
+    background-color: aliceblue;
+    color: $color-negro;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+  }
